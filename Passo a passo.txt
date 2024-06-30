@@ -1,0 +1,1 @@
+1- Suba o arquivo principal Seletores CSS.html na branch main usando o Tortoise Git (e este arquivo texto também).
