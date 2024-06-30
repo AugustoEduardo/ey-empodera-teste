@@ -13,3 +13,23 @@ Depois clique com o botão direito sobre a pasta e dê um commit com o Git Torto
 Antes de escrever a mensagem, commitar e subir o projeto, você pode dar dois cliques no arquivo para comparar as alterações
 feitas com o código como estava antes. Poderá, inclusive, fazer mais alterações na nova janela que abrir.
 Quando terminar, escreva a mensagem, dê o commit e o push no repositório do Github.
+
+4- Vamos imaginar que você está trabalhando em grupo. Você vai dar um descanso enquanto seus colegas trabalham. Quando
+voltar, é bem provável que seus colegas tenham feito diversas alterações, diversos commits e outras branches. Então, no
+Git Bash, digite "git fetch" para receber um log com todas as atualizações feitas no projeto. E se alguém tiver colocado
+algo em cima do que você está fazendo, dê um "git pull --rebase" para começar a trabalhar com o projeto atualizado.
+Isto é muito importante, pois, se o seu código já estiver muito antigo e seus colegas mexeram demais no servidor, você
+não poderá subir seu projeto se ele não estiver atualizado, já que isso daria muito problema no seu projeto.
+
+5- Veremos o item 4 na prática. No repositório do GitHub, troque a branch para feature/seletorescss. Daí, entre no arquivo
+html e edite-o usando o botão de lápis no canto superior direito do código. Em seguida, faça mais uma alteração no arquivo
+que está em sua máquina, de forma que as alterações da máquina e do Github sejam diferentes. Quando der commit e push no
+Tortoise Git, deve aparecer uma mensagem de erro.
+Vá ao Git Bash e use o comando "git pull --rebase" (o rebase é para evitar possíveis problemas). Se der algum erro, é porque
+provavelmente as alterações foram feitas nas mesmas linhas, e o Git Bash pedirá para você resolver isso manualmente. Sendo
+este o caso, clique com o botão direito na pasta dos arquivos, vá em TortoiseGit e depois em Resolve.
+Escolha quais alterações manter e quais descartar, depois salve e escolha a opção "mark as resolved". Feito isso, volte ao
+Git Bash e digite "git rebase --continue". Repita o procedimento até todos os erros serem corrigidos (se houve apenas um
+commit no Github, precisará usar este procedimento uma só vez. Caso contrário, tem que ir no Resolve e ir dando git rebase
+--continue até acabar). Termine a etapa do Git Bash digitando :wq. Por fim, dê git status para verificar a situação do
+programa e depois git push para colocar o arquivo no repositório.
