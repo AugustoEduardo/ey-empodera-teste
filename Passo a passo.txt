@@ -1,1 +1,15 @@
 1- Suba o arquivo principal Seletores CSS.html na branch main usando o Tortoise Git (e este arquivo texto também).
+
+2- Use o Git Bash Here na pasta contendo os arquivos. Por segurança, iremos mudar a branch para a dos desenvolvedores e,
+em seguida, mudaremos de novo para a nossa própria branch. Fazemos isso como uma questão de organização, onde "dev" será
+a branch contendo todas as modificações do arquivo feitas pelos desenvolvedores, "main" será a branch onde todas as
+modificações em "dev" foram aprovadas e inseridas no arquivo base, e "feature/nomedoarquivo.html" vai ser a branch onde
+iremos trabalhar.
+Para mudar de branch, digite "git checkout -b dev", tecle ENTER, depois digite "git checkout -b feature/seletorescss"
+e tecle ENTER mais uma vez.
+
+3- Faça qualquer alteração no arquivo. Apague, edite ou acrescente alguma(s) linha(s) de código e salve-o.
+Depois clique com o botão direito sobre a pasta e dê um commit com o Git Tortoise (veja que estará na branch nova).
+Antes de escrever a mensagem, commitar e subir o projeto, você pode dar dois cliques no arquivo para comparar as alterações
+feitas com o código como estava antes. Poderá, inclusive, fazer mais alterações na nova janela que abrir.
+Quando terminar, escreva a mensagem, dê o commit e o push no repositório do Github.
