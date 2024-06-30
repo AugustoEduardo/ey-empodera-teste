@@ -45,3 +45,16 @@ dev" para colocar, na branch dev atualizada, os nossos códigos. Tudo o que esti
 a dev atualizada precisa estar na branch dev através do comando "git merge feature/seletorescss --no-ff", que é o método
 Fast Forward. Ele automaticamente cria uma mensagem de commit de quando damos merge nas branches. Saia com o comando ":wq".
 Só falta agora colocar no repositório. Um simples "git push" fará o trabalho.
+
+7- O que fizemos: Saímos de dev, criamos uma branch, mexemos numa página html, voltamos pra dev ao terminarmos o trabalho.
+A próxima branch criada a partir de dev vai ter tudo o que fizemos na página html junto com quaisquer alterações feitas
+pelos colegas. A feature/seletorescss vai pro lixo porque não mexemos mais nessa branch quando voltamos pra dev. É o mesmo
+procedimento: criamos outra branch com o "git checkout -b nomedabranch" e iremos mexer nesta "etapa nº2" do trabalho.
+E antes de criá-la, sempre dê um "git pull --rebase" para verificar se o repositório da sua máquina está atualizado.
+
+8- Como um extra, quero testar o funcionamento do .gitignore. Coloque quaisquer arquivos na sua pasta. Depois, quando for
+dar commit com o TortoiseGit, selecione esses arquivos na lista de baixo, clique com o botão direito e vá em "Add to ignore
+list". Esta vai ser uma lista com todos os arquivos que você não quer colocar no Github.
+
+9- Para ver um resumo do que você fez, no formato de branches, clique com o botão direito sob a pasta, vá em TortoiseGit e
+depois em Show Log.
