@@ -33,3 +33,15 @@ Git Bash e digite "git rebase --continue". Repita o procedimento até todos os e
 commit no Github, precisará usar este procedimento uma só vez. Caso contrário, tem que ir no Resolve e ir dando git rebase
 --continue até acabar). Termine a etapa do Git Bash digitando :wq. Por fim, dê git status para verificar a situação do
 programa e depois git push para colocar o arquivo no repositório.
+
+6- Retornemos à branch dev digitando "git checkout dev". Aliás, esquecemos de fazer algo importante, que é deixar o
+Github reconhecer a existência da branch dev antes de inserirmos algo nela (que também deveria ter sido feito no feature/
+seletorescss, mas agora não precisa). Para isso, digite "git push --set-upstream origin dev". Agora ela estará visível no
+repositório do Github.
+Antes de colocar nosso arquivo na dev, é vital que demos o "git pull --rebase" para verificar se outros usuários mexeram
+nessa branch e assim deixar nosso programa atualizado. A próxima etapa seria fazer o checkout no feature/seletorescss
+novamente para alterarmos os arquivos seguindo o dev atualizado. Em seguida, escreveremos "git rebase dev" e "git checkout
+dev" para colocar, na branch dev atualizada, os nossos códigos. Tudo o que estiver na feature/seletorescss em conjunto com
+a dev atualizada precisa estar na branch dev através do comando "git merge feature/seletorescss --no-ff", que é o método
+Fast Forward. Ele automaticamente cria uma mensagem de commit de quando damos merge nas branches. Saia com o comando ":wq".
+Só falta agora colocar no repositório. Um simples "git push" fará o trabalho.
