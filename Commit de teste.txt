@@ -1,1 +1,0 @@
-Testando o funcionamento do TortoiseGit com este commit.
